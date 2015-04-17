@@ -1,0 +1,12 @@
+/*
+Theme Name: slate-0.3.1_beusekom
+Theme URI: htpps://github.com/mellowmuis/beusekom
+Description: a clean slate - beusekom child theme
+Version: 0.3.1
+Author: Melle
+Author URI: http://www.lokaalgevonden.nl
+Tags: slate
+Template: slate-0.3.1
+*/
+
+@import url('../slate-0.3.1/style.css');

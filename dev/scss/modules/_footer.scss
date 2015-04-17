@@ -1,0 +1,26 @@
+.Footer {
+}
+
+// RESPONSIVE FOOTER
+.Footer-inner .widget {
+	@include span-columns(4);
+	@media screen and(max-width: 980px){
+		@include span-columns(12);
+	}
+}
+
+.Footer-inner {
+}
+
+//style the widgets
+.Footer-inner .widget {
+
+}
+.Socket{
+	margin-top:-20px;
+}
+.bottom-border{
+	margin-bottom:20px;
+	border-bottom:1px solid black; 
+	padding-bottom:0px !important;
+}

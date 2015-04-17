@@ -1,0 +1,78 @@
+// *************************************
+//
+// Logo
+// -> Specific logo container
+//
+// *************************************
+
+.Logo {
+ // display: inline-block;
+  position: relative;
+  background:white;
+  top:0px;
+  padding:10px;
+  padding-bottom:0px;
+  text-align: center;
+  margin-top: -72px;
+  z-index:9999;
+  border:1px solid black;
+  border-bottom:0px;
+  margin-left:-1px;
+  a{
+    text-decoration:none;
+    font-size:12px;
+    color:black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+// -------------------------------------
+// Modifiers
+// -------------------------------------
+
+// -------------------------------------
+// States
+// -------------------------------------
+
+// .is-module-state
+
+// -------------------------------------
+// Context
+// -------------------------------------
+
+// .has-module
+
+// -------------------------------------
+// Submodules
+// -------------------------------------
+
+.Logo-textLink {
+  vertical-align: top;
+  padding-top: rem(16px);
+}
+
+.Logo-textLink,
+.Logo-heading,
+.Logo-imageLink {
+  display: inline-block;
+}
+
+// ----- Heading ----- //
+
+.Logo-headingTop,
+.Logo-headingBottom {
+  color: $c-white;
+  display: block;
+  line-height: 1;
+}
+
+.Logo-headingTop {
+  font-family: 'Hobo', sans-serif;
+  font-size: rem(70px);
+  text-align: center;
+}
+
+.Logo-headingBottom {
+  font-size: rem(30px);
+}
