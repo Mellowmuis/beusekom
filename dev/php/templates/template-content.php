@@ -63,7 +63,7 @@ Template Name: Content
 					  <li rel="tab2">Project 2</li>
 					  <li rel="tab3">Project 3</li> 
 					  <li rel="tab4">Project 4</li>
-					  <li rel="tab5">Project 5</li>
+					  <li rel="tab5">Project 5</li> 
 					</ul>
 				</div>
 					<div class="u-gridCol9 split-section-right"> 
@@ -72,8 +72,7 @@ Template Name: Content
 						  <h3 class="d_active tab_drawer_heading" rel="tab1">Project 1</h3>
 						  <div id="tab1" class="tab_content">
 						  	<h3>Project 1</h3>
-						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel dictum dolor. Nam sit amet hendrerit nunc. Fusce nec dignissim mauris. Nunc blandit, nibh at mattis ornare, ipsum neque consequat ligula, sit amet semper nibh nibh viverra lectus. Vestibulum ornare pharetra mauris at finibus. Nunc venenatis odio orci, at tempus orci malesuada vestibulum. Cras odio ex, semper ac urna in, aliquam vulputate nisl. Praesent ullamcorper nibh nisl, et imperdiet nisl lobortis at.</p>
-						    <?php the_content(); ?>
+						  	    <?php the_content(); ?>
 						  </div>
 						  <!-- #tab1 -->
 						  <h3 class="tab_drawer_heading" rel="tab2">Project 2</h3>

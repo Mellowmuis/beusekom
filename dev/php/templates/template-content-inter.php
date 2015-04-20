@@ -58,13 +58,34 @@ Template Name: Content-inter
 		<div class="u-gridRow row-border">
 			<div class="white-bg u-cf">
 				<div class="u-gridCol3 split-section" style="border-right:0px;">
-					<ul class="tabs">
+					<!--<ul class="tabs">
 					  <li class="active" rel="tab1">Project 1</li>
 					  <li rel="tab2">Project 2</li>
 					  <li rel="tab3">Project 3</li> 
 					  <li rel="tab4">Project 4</li>
 					  <li rel="tab5">Project 5</li>
-					</ul>
+					</ul>-->
+					   <?php the_content();
+				       $image1 = get_field('content_1'); 
+				       $image2 = get_field('content_2'); 
+				       $image3 = get_field('content_3');
+				       $image4 = get_field('content_4'); 
+
+				       ?>
+				        <ul class="tabs clearfix" data-tabgroup="first-tab-group"> 
+				          
+				          <li><a href="#tab1" class="active"><img class="expertiseimage-cont" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>"/> <br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_1', true); ?></a></li>
+				          <li><a href="#tab2"><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>"/><br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_2', true); ?></a></li>
+				         
+				          <?php if($image3 != null && $image3['url'] != null) { ?>
+				          <li><a href="#tab3"><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>"/><br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_3', true); ?></a></li>
+				          <?php } ?>
+
+
+				          <?php if($image4 != null && $image4['url'] != null) { ?>
+				          <li><a href="#tab4"><img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>"/><br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_4', true); ?></a></li>
+				          <?php } ?>
+				        </ul>
 				</div>
 					<div class="u-gridCol9 split-section-right"> 
 						
@@ -72,8 +93,7 @@ Template Name: Content-inter
 						  <h3 class="d_active tab_drawer_heading" rel="tab1">Project 1</h3>
 						  <div id="tab1" class="tab_content">
 						  	<h3>Project 1</h3>
-						  	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vel dictum dolor. Nam sit amet hendrerit nunc. Fusce nec dignissim mauris. Nunc blandit, nibh at mattis ornare, ipsum neque consequat ligula, sit amet semper nibh nibh viverra lectus. Vestibulum ornare pharetra mauris at finibus. Nunc venenatis odio orci, at tempus orci malesuada vestibulum. Cras odio ex, semper ac urna in, aliquam vulputate nisl. Praesent ullamcorper nibh nisl, et imperdiet nisl lobortis at.</p>
-						    <?php the_content(); ?>
+						  		<?php the_content(); ?>
 						  </div>
 						  <!-- #tab1 -->
 						  <h3 class="tab_drawer_heading" rel="tab2">Project 2</h3>
