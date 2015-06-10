@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <!-- Title -->
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
-
+    <title>L van Beusekom</title>
+<!--<?php wp_title( '|', true, 'right' ); ?>-->
     <!-- Mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -20,9 +20,9 @@
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico">
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri(); ?>/apple-touch-icon.png">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
     <!-- build:remove:expanded -->
     <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/css/production.min.css">
     <!-- /build -->
@@ -63,7 +63,7 @@
             <div class="scheme1 u-cf">
                 <div class="u-gridCol3 Logo">
                      <a href="/home"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png"><br></a>
-                     <a href="/home"> Voor al uw Verbouwingen en bieuwbouw</a><br><br>
+                     <a href="/home"> Voor al uw Verbouwingen en nieuwbouw</a><br><br>
                 </div>
 
                 <div class="u-gridCol8 u-objRight menu">

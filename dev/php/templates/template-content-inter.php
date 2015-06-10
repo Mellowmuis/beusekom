@@ -65,58 +65,44 @@ Template Name: Content-inter
 					  <li rel="tab4">Project 4</li>
 					  <li rel="tab5">Project 5</li>
 					</ul>-->
-					   <?php the_content();
-				       $image1 = get_field('content_1'); 
-				       $image2 = get_field('content_2'); 
-				       $image3 = get_field('content_3');
-				       $image4 = get_field('content_4'); 
-
-				       ?>
-				        <ul class="tabs clearfix" data-tabgroup="first-tab-group"> 
-				          
-				          <li><a href="#tab1" class="active"><img class="expertiseimage-cont" src="<?php echo $image1['url']; ?>" alt="<?php echo $image1['alt']; ?>"/> <br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_1', true); ?></a></li>
-				          <li><a href="#tab2"><img src="<?php echo $image2['url']; ?>" alt="<?php echo $image2['alt']; ?>"/><br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_2', true); ?></a></li>
-				         
-				          <?php if($image3 != null && $image3['url'] != null) { ?>
-				          <li><a href="#tab3"><img src="<?php echo $image3['url']; ?>" alt="<?php echo $image3['alt']; ?>"/><br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_3', true); ?></a></li>
-				          <?php } ?>
-
-
-				          <?php if($image4 != null && $image4['url'] != null) { ?>
-				          <li><a href="#tab4"><img src="<?php echo $image4['url']; ?>" alt="<?php echo $image4['alt']; ?>"/><br class="show-for-large"><?php echo get_post_meta($post->ID, 'name_4', true); ?></a></li>
-				          <?php } ?>
-				        </ul>
+					<ul class="tabs">
+					  <li class="active" rel="tab1"><?php echo get_post_meta($post->ID, 'name_1', true); ?></li>
+					  <li rel="tab2"><?php echo get_post_meta($post->ID, 'name_2', true); ?></li>
+					  <li rel="tab3"><?php echo get_post_meta($post->ID, 'name_3', true); ?></li> 
+					  <li rel="tab4"><?php echo get_post_meta($post->ID, 'name_4', true); ?></li>
+					  <li rel="tab5"><?php echo get_post_meta($post->ID, 'name_5', true); ?></li>
+					</ul>
 				</div>
 					<div class="u-gridCol9 split-section-right"> 
 						
 						<div class="tab_container">
-						  <h3 class="d_active tab_drawer_heading" rel="tab1">Project 1</h3>
+						  <h3 class="d_active tab_drawer_heading" rel="tab1"><?php echo get_post_meta($post->ID, 'name_1', true); ?></h3>
 						  <div id="tab1" class="tab_content">
-						  	<h3>Project 1</h3>
-						  		<?php the_content(); ?>
+						  	<h3><?php echo get_post_meta($post->ID, 'name_1', true); ?></h3>
+						  		<?php echo get_post_meta($post->ID, 'content_1', true); ?>
 						  </div>
 						  <!-- #tab1 -->
-						  <h3 class="tab_drawer_heading" rel="tab2">Project 2</h3>
+						  <h3 class="tab_drawer_heading" rel="tab2"><?php echo get_post_meta($post->ID, 'name_2', true); ?></h3>
 						  <div id="tab2" class="tab_content">
-						  <h3>Project 2</h3>
-						    <?php the_content(); ?>
-						  </div>
+						  <h3><?php echo get_post_meta($post->ID, 'name_2', true); ?></h3>
+						    <?php echo get_post_meta($post->ID, 'content_2', true); ?>
+						  </div> 
 						  <!-- #tab2 -->
-						  <h3 class="tab_drawer_heading" rel="tab3">Project 3</h3>
+						  <h3 class="tab_drawer_heading" rel="tab3"><?php echo get_post_meta($post->ID, 'name_3', true); ?></h3>
 						  <div id="tab3" class="tab_content">
-						  <h3>Project 3</h3>
-						   <?php the_content(); ?>
+						  <h3><?php echo get_post_meta($post->ID, 'name_3', true); ?></h3>
+						   <?php echo get_post_meta($post->ID, 'content_3', true); ?>
 						  </div>
 						  <!-- #tab3 -->
-						  <h3 class="tab_drawer_heading" rel="tab4">Project 3</h3>
+						  <h3 class="tab_drawer_heading" rel="tab4"><?php echo get_post_meta($post->ID, 'name_4', true); ?></h3>
 						  <div id="tab4" class="tab_content">
-						  <h3>Project 3</h3>
-						    <?php the_content(); ?>
+						  <h3><?php echo get_post_meta($post->ID, 'name_4', true); ?></h3>
+						    <?php echo get_post_meta($post->ID, 'content_4', true); ?>
 						  </div>
-						  <h3 class="tab_drawer_heading" rel="tab5">Project 3</h3>
+						  <h3 class="tab_drawer_heading" rel="tab5"><?php echo get_post_meta($post->ID, 'name_5', true); ?></h3>
 						  <div id="tab5" class="tab_content">
-						  <h3>Project 3</h3>
-						    <?php the_content(); ?>			
+						  <h3><?php echo get_post_meta($post->ID, 'name_5', true); ?></h3>
+						    <?php echo get_post_meta($post->ID, 'content_5', true); ?>			
 						  </div>
 						  <!-- #tab4 --> 
 						</div>

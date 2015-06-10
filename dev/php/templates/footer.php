@@ -13,12 +13,12 @@
 						<li>Alphen aan den Rijn</li>
 					</ul>
 				</div>
-				<div class="u-gridCol3">
+				<div class="u-gridCol3 contact">
 					<b>Contact</b>
 					<ul>
-						<li><i class="fa fa-phone"></i> tel. 0172420577</li>
-						<li><i class="fa fa-fax"></i> fax. 0172422087</li>
-						<li><i class="fa fa-envelope"></i> info@lvanbeusekom.nl</li>
+						<li><a href="telto:0172420577"><i class="fa fa-phone"></i> tel. 0172420577</a></li>
+						<li> <i class="fa fa-fax"></i> fax. 0172422087</li>
+						<li><a href="mailto:info@lvanbeusekom.nl"><i class="fa fa-envelope"></i> info@lvanbeusekom.nl</a></li>
 					</ul>
 				</div>
 				<div class="u-gridCol3">
